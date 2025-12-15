@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: yellow;
+        }
+        .banner {
+            background-image: url(download.jpeg);
+            height: 300px;
+            
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner h1 {
+            background-color: rgba(0,0,0,0.6);
+            padding: 15px;
+        }
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 200px;
+        }
+        .price {
+            box-shadow: 0 0 10px #aaa;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="banner">
+        <h1>My Product</h1>
+    </div>
+    <section>
+        <h2>Features</h2>
+        <div class="container">
+            <div class="box">Feature 1</div>
+            <div class="box">Feature 2</div>
+            <div class="box">Feature 3</div>
+        </div>
+    </section>
+    <section>
+        <h2>Pricing</h2>
+        <div class="container">
+            <div class="box price">
+                <h3>Basic</h3>
+                <p>₹199</p>
+                <button>Buy</button>
+            </div>
+            <div class="box price">
+                <h3>Standard</h3>
+                <p>₹399</p>
+                <button>Buy</button>
+            </div>
+            <div class="box price">
+                <h3>Premium</h3>
+                <p>₹599</p>
+                <button>Buy</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 My Product</p>
+    </footer>
+</body>
+</html>
